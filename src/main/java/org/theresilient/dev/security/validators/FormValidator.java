@@ -4,14 +4,21 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Optional;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class FormValidator {
 
     private static final Pattern EMAIL_PATTERN =
             Pattern.compile("^[A-Za-z0-9+_.-]+@(.+)$");
-    private static final Pattern PHONE_PATTERN =
-            Pattern.compile("^\\d{8}$");
+
+    private static final String PHONE_NUMBER_REGEX = "^\\+229 \\d{2} \\d{3} \\d{3}$";
+
+    public static boolean isValidPhoneNumber(String phoneNumber) {
+        Pattern pattern = Pattern.compile(PHONE_NUMBER_REGEX);
+        Matcher matcher = pattern.matcher(phoneNumber);
+        return matcher.matches();
+    }
 
     public static boolean isValidName(String name) {
         return name != null && name.length() > 1;
@@ -19,10 +26,6 @@ public class FormValidator {
 
     public static boolean isValidEmail(String email) {
         return email != null && EMAIL_PATTERN.matcher(email).matches();
-    }
-
-    public static boolean isValidPhoneNumber(String phoneNumber) {
-        return phoneNumber != null && PHONE_PATTERN.matcher(phoneNumber).matches();
     }
 
     public static boolean isValidDate(String date, Optional<String> format) {
