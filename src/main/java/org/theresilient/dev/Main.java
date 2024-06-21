@@ -1,6 +1,6 @@
 package org.theresilient.dev;
 
-import org.theresilient.dev.commands.FormValidationCmdLine;
+import org.theresilient.dev.commands.*;
 import org.theresilient.dev.shorcuts.CMD;
 
 import java.util.Scanner;
@@ -16,6 +16,7 @@ public class Main {
         do {
             CMD.printLn("\n\n\nQuelle action souhaitez vous effectuer ? \n");
             CMD.printLn("\t1. Valider des entrées utilisateurs");
+            CMD.printLn("\t2. Tenter d'injecter une requête SQL");
 
             CMD.print("\n\tAction : ");
 
@@ -34,6 +35,9 @@ public class Main {
                     continue;
                 case 1:
                     FormValidationCmdLine.run(scanner);
+                    break;
+                case 2:
+                    SQLInjectionCmdLine.run(scanner);
                     break;
             }
         } while (menuChoice != 0);

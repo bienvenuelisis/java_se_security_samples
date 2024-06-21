@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee30563a-17ec-4ef0-97d8-f339c3e5e419" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/theresilient/dev/models/GenderEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sql-injection.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/theresilient/dev/commands/SQLInjectionCmdLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/theresilient/dev/connection/SQLQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/theresilient/dev/commands/FormValidationCmdLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/theresilient/dev/commands/FormValidationCmdLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/theresilient/dev/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/theresilient/dev/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/theresilient/dev/security/validators/FormValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/theresilient/dev/security/validators/FormValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/theresilient/dev/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/theresilient/dev/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,15 +21,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="custom-validation" />
+        <entry key="$PROJECT_DIR$" value="validation-with-apache-commons" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,7 +55,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "validation-with-apache-commons",
+    "git-widget-placeholder": "avoid-sql-injections",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/D/Professional/Professor/Formations/Java_JBoss/JBossEAP/7.4_Samples/JavaSE_Security/src/main/resources",
     "node.js.detected.package.eslint": "true",
@@ -65,6 +65,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -119,7 +124,7 @@
       <updated>1718861147391</updated>
       <workItem from="1718861148534" duration="1691000" />
       <workItem from="1718862869991" duration="105000" />
-      <workItem from="1718863002972" duration="10273000" />
+      <workItem from="1718863002972" duration="20782000" />
     </task>
     <servers />
   </component>
